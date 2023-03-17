@@ -1,0 +1,197 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MarsRover.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MarsRover.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\css\\app.min.css"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\css\\custom.min.css",
+      "PackagePath": "staticwebassets\\css\\custom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\css\\icons.min.css",
+      "PackagePath": "staticwebassets\\css\\icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\boxicons.eot",
+      "PackagePath": "staticwebassets\\fonts\\boxicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\boxicons.html",
+      "PackagePath": "staticwebassets\\fonts\\boxicons.html"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\boxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\boxicons.woff",
+      "PackagePath": "staticwebassets\\fonts\\boxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\boxiconsd41d.svg",
+      "PackagePath": "staticwebassets\\fonts\\boxiconsd41d.svg"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-brands-400.html",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.html"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-regular-400.html",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.html"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-solid-900.html",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.html"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\la-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\materialdesignicons-webfont1d2d.eot",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont1d2d.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\materialdesignicons-webfont1d2d.html",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont1d2d.html"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\materialdesignicons-webfont1d2d.ttf",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont1d2d.ttf"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\materialdesignicons-webfont1d2d.woff",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfont1d2d.woff"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\materialdesignicons-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\fonts\\materialdesignicons-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\remixicondf6d.eot",
+      "PackagePath": "staticwebassets\\fonts\\remixicondf6d.eot"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\remixicondf6d.html",
+      "PackagePath": "staticwebassets\\fonts\\remixicondf6d.html"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\remixicondf6d.svg",
+      "PackagePath": "staticwebassets\\fonts\\remixicondf6d.svg"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\remixicondf6d.ttf",
+      "PackagePath": "staticwebassets\\fonts\\remixicondf6d.ttf"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\fonts\\remixicondf6d.woff",
+      "PackagePath": "staticwebassets\\fonts\\remixicondf6d.woff"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\images\\Thrive+logo.png",
+      "PackagePath": "staticwebassets\\images\\Thrive+logo.png"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\js\\layout.js",
+      "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MarsRover.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MarsRover.props",
+      "PackagePath": "build\\MarsRover.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MarsRover.props",
+      "PackagePath": "buildMultiTargeting\\MarsRover.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MarsRover.props",
+      "PackagePath": "buildTransitive\\MarsRover.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
