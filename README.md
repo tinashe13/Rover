@@ -29,7 +29,7 @@ To run the program, follow these steps:
 
 
 dotnet build
-Run the following command to run the program:
+```Run the following command to run the program:```
 
 dotnet run --project MarsRover <input-file> <output-file>
 Replace <input-file> with the path to the input file and <output-file> with the path to the output file.
