@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tinas\\.nuget\\packages\\": {}
+    "C:\\Users\\Norman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\MarsRover.csproj",
+      "projectUniqueName": "C:\\Users\\Norman\\Documents\\GitHub\\Rover\\MarsRover.csproj",
       "projectName": "MarsRover",
-      "projectPath": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\MarsRover.csproj",
-      "packagesPath": "C:\\Users\\tinas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tinas\\Documents\\GitHub\\MarsRover\\obj\\",
+      "projectPath": "C:\\Users\\Norman\\Documents\\GitHub\\Rover\\MarsRover.csproj",
+      "packagesPath": "C:\\Users\\Norman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Norman\\Documents\\GitHub\\Rover\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tinas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Norman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

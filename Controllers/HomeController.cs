@@ -27,7 +27,7 @@ namespace MarsRover.Controllers
             string[] message = instruction.Split(Environment.NewLine,StringSplitOptions.RemoveEmptyEntries);
            
             //split the input to gee the upper right co-ordinates of the plateau using a character array
-            int[] PlateauArr = message[0].Split(' ').Select(int.Parse).ToArray();
+            int[] PlateauArr = message[0].Trim().Split(' ').Select(int.Parse).ToArray();
 
             //create new array to strore the values of the rover starting position and instruction seperate
             string[] RoverDetails = new string[message.Length - 1];
@@ -55,11 +55,11 @@ namespace MarsRover.Controllers
             for (int i = 0; i < RoverInstructions.Length; i++)
             {
 
-                string[] PositionString = StartingPosition[i].Split(' ');
+                string[] PositionString = StartingPosition[i].Trim().Split(' ');
 
                 int xCoodinate = int.Parse(PositionString[0]);
                 int yCoodinate = int.Parse(PositionString[1]);
-                string RoverOrientation = PositionString[2];
+                string RoverOrientation = PositionString[2].Trim();
 
                 
                 //initiate components

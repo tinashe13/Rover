@@ -70,12 +70,13 @@ namespace Rover.Models
                         MoveForward();
                         break;
                     default:
+
                         throw new ArgumentException($"Invalid instruction: {instruction}");
                 }
             }
         }
 
-        private void TurnLeft()
+        public void TurnLeft()
         {
             switch (CurrentPosition.Orientation)
             {
@@ -94,7 +95,7 @@ namespace Rover.Models
             }
         }
 
-        private void TurnRight()
+        public void TurnRight()
         {
             switch (CurrentPosition.Orientation)
             {
@@ -113,7 +114,7 @@ namespace Rover.Models
             }
         }
 
-        private void MoveForward()
+        public void MoveForward()
         {
             switch (CurrentPosition.Orientation)
             {

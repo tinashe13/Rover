@@ -28,18 +28,7 @@ To run the program, follow these steps:
 dotnet build
 Run the following command to run the program:
 
-```dotnet run --project MarsRover <input-file> <output-file>```
-Replace <input-file> with the path to the input file and <output-file> with the path to the output file.
-
-For example:
-
-
-```dotnet run --project MarsRover input.txt output.txt```
-Check the output file to see the final positions of the rovers.
-
-  
-  
-  
+```dotnet run ```
   
  # Problem question
   
