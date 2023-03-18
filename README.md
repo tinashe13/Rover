@@ -29,30 +29,32 @@ To run the program, follow these steps:
 
 
 dotnet build
-```Run the following command to run the program:```
+Run the following command to run the program:
 
-dotnet run --project MarsRover <input-file> <output-file>
+```dotnet run --project MarsRover <input-file> <output-file>```
 Replace <input-file> with the path to the input file and <output-file> with the path to the output file.
 
 For example:
 
-css
-Copy code
-dotnet run --project MarsRover input.txt output.txt
+
+```dotnet run --project MarsRover input.txt output.txt```
 Check the output file to see the final positions of the rovers.
 
 Sample Input and Output
 Here is an example of the input and output files for the program:
 
-Input (input.txt)
-Copy code
+Input
+```
 5 5
 1 2 N
 LMLMLMLMM
 3 3 E
 MMRMMRMRRM
-Output (output.txt)
-Copy code
+  ```
+ 
+Expected Output
+```
 1 3 N
 5 1 E
+```
 This output indicates that the first rover ended up at position (1, 3) facing north, and the second rover ended up at position (5, 1) facing east.
