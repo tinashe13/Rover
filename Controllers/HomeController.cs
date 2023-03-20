@@ -59,7 +59,7 @@ namespace MarsRover.Controllers
 
                 int xCoodinate = int.Parse(PositionString[0]);
                 int yCoodinate = int.Parse(PositionString[1]);
-                string RoverOrientation = PositionString[2].Trim();
+                string RoverOrientation = PositionString[2].Trim().ToUpper();
 
                 
                 //initiate components
@@ -70,7 +70,7 @@ namespace MarsRover.Controllers
 
                 // Explore rover
                 var rover = new Mars_Rover(roverPosition, plateau);
-                rover.ExecuteInstructions(roverInstructions);
+                rover.ExecuteInstructions(roverInstructions.ToUpper());
                 roverResponses.Add(rover.CurrentPosition.ToString());
                 Console.WriteLine(roverResponses[0]);
                 

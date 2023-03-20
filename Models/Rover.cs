@@ -1,10 +1,4 @@
-﻿namespace MarsRover.Models
-{
-    public class Rover
-    {
-    }
-}
-namespace Rover.Models
+﻿namespace Rover.Models
 {
     public class Plateau
     {
@@ -46,7 +40,7 @@ namespace Rover.Models
     public class Mars_Rover
     {
         public Position CurrentPosition { get; private set; }
-        private Plateau Plateau { get; }
+        public Plateau Plateau { get; }
 
         public Mars_Rover(Position startingPosition, Plateau plateau)
         {
