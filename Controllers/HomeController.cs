@@ -36,7 +36,6 @@ namespace MarsRover.Controllers
                 RoverDetails[i - 1] = message[i];
             }
             
-
             //create an array containing only the starting positions of the Rovers
             string[] StartingPosition = new string[RoverDetails.Length / 2];
             for (int i = 0, j = 0; i < RoverDetails.Length; i += 2, j++)
@@ -61,12 +60,10 @@ namespace MarsRover.Controllers
                 int yCoodinate = int.Parse(PositionString[1]);
                 string RoverOrientation = PositionString[2].Trim().ToUpper();
 
-                
-                //initiate components
+                //initiate objects
                 var plateau = new Plateau(PlateauArr[0], PlateauArr[1]);
                 var roverPosition = new Position(xCoodinate, yCoodinate, RoverOrientation);
                 var roverInstructions = RoverInstructions[i];
-
 
                 // Explore rover
                 var rover = new Mars_Rover(roverPosition, plateau);
@@ -75,8 +72,6 @@ namespace MarsRover.Controllers
                 Console.WriteLine(roverResponses[0]);
                 
             }
-
-
 
             // Display responses
             ViewBag.RoverResponses = roverResponses;
