@@ -13,7 +13,7 @@ To handle the input and output of the program, I used the asp.net Razor view tem
 To develop the solution, you will need the following software:
 
 .NET 6.0 or later
-A text editor or integrated development environment (IDE), such as Visual Studio Code or Visual Studio
+A text editor or integrated development environment (IDE), such as Visual Studio Code or Visual Studio 2022 or higher
 
 # Getting Started
 To run the program, follow these steps:
