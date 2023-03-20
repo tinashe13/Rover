@@ -20,15 +20,9 @@ To run the program, follow these steps:
 
 1. Clone this repository to your local machine.
 
-2. Navigate to the project directory in a terminal or command prompt.
+2. Navigate to the project directory
 
-3. Run the following command to build the project:
-
-
-dotnet build
-Run the following command to run the program:
-
-```dotnet run ```
+3. open the .sln file in visual studio 2022 and run
   
  # Problem question
   
