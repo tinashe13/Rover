@@ -14,7 +14,6 @@ namespace Rover.Models
             Plateau = plateau;
         }
 
-
         //Execute instructions method
         public void ExecuteInstructions(string instructions)
         {
