@@ -64,7 +64,6 @@
                         MoveForward();
                         break;
                     default:
-
                         throw new ArgumentException($"Invalid instruction: {instruction}");
                 }
             }
@@ -86,6 +85,8 @@
                 case "W":
                     CurrentPosition.Orientation = "S";
                     break;
+                default: 
+                    throw new ArgumentException($"Invalid Rover orientation: {CurrentPosition.Orientation}");
             }
         }
 
@@ -105,6 +106,8 @@
                 case "W":
                     CurrentPosition.Orientation = "N";
                     break;
+                default:
+                    throw new ArgumentException($"Invalid Rover orientation: {CurrentPosition.Orientation}");
             }
         }
 
@@ -124,6 +127,8 @@
                 case "W":
                     CurrentPosition.X -= 1;
                     break;
+                default:
+                    throw new ArgumentException($"Invalid Rover orientation: {CurrentPosition.Orientation}");
             }
 
             if (!Plateau.IsValidPosition(CurrentPosition))

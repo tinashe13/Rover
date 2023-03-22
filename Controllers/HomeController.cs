@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Rover.Models;
 using System.Diagnostics;
+using System.Linq.Expressions;
 
 namespace MarsRover.Controllers
 {
@@ -16,7 +17,6 @@ namespace MarsRover.Controllers
 
         public IActionResult Index()
         {
- 
             return View();
         }
 
@@ -24,10 +24,32 @@ namespace MarsRover.Controllers
         public IActionResult Index(String instruction)
         {
             //split the input by each new line
-            string[] message = instruction.Split(Environment.NewLine,StringSplitOptions.RemoveEmptyEntries);
-           
+            string[] message;
+            if (!string.IsNullOrEmpty(instruction))
+            {
+                message = instruction.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries);
+            }
+            else
+            {
+                // Handle the NullReferenceException
+                ViewBag.ErrorMessage = "Please enter Rover instruction to explore";
+                return View("index");
+            }
+
+
             //split the input to gee the upper right co-ordinates of the plateau using a character array
-            int[] PlateauArr = message[0].Trim().Split(' ').Select(int.Parse).ToArray();
+            int[] PlateauArr;
+
+            if (message[0].Trim().Split(' ').All(x => int.TryParse(x, out int _)))
+            {
+                PlateauArr = message[0].Trim().Split(' ').Select(int.Parse).ToArray();
+            }
+            else
+            {
+                // Handle the FormatException
+                ViewBag.ErrorMessage = "The first line of your input must be 2 whole numbers with a single space in between";
+                return View("index");
+            }
 
             //create new array to strore the values of the rover starting position and instruction seperate
             string[] RoverDetails = new string[message.Length - 1];
@@ -67,14 +89,34 @@ namespace MarsRover.Controllers
 
                 // Explore rover
                 var rover = new Mars_Rover(roverPosition, plateau);
-                rover.ExecuteInstructions(roverInstructions.ToUpper());
+
+                try
+                {
+                    rover.ExecuteInstructions(roverInstructions.ToUpper());
+                }
+                catch (Exception ex)
+                {
+                    if (ex is InvalidOperationException || ex is ArgumentException)
+                    {
+                        // Handle the exception here
+                        ViewBag.ErrorMessage = ex.Message;
+                        return View("index");
+                    }
+                    else
+                    {
+                        // Handle other types of exceptions here
+                        ViewBag.ErrorMessage = "Please check your input for correct format";
+                    }
+                    throw;
+                }
+
                 roverResponses.Add(rover.CurrentPosition.ToString());
-                Console.WriteLine(roverResponses[0]);
-                
+                //Console.WriteLine(roverResponses[0]);      
             }
 
             // Display responses
             ViewBag.RoverResponses = roverResponses;
+
             return View("index");
         }
 
