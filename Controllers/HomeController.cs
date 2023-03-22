@@ -36,7 +36,6 @@ namespace MarsRover.Controllers
                 return View("index");
             }
 
-
             //split the input to gee the upper right co-ordinates of the plateau using a character array
             int[] PlateauArr;
 
@@ -51,71 +50,75 @@ namespace MarsRover.Controllers
                 return View("index");
             }
 
-            //create new array to strore the values of the rover starting position and instruction seperate
-            string[] RoverDetails = new string[message.Length - 1];
-            for (int i = 1; i < message.Length; i++)
+            try 
             {
-                RoverDetails[i - 1] = message[i];
-            }
-            
-            //create an array containing only the starting positions of the Rovers
-            string[] StartingPosition = new string[RoverDetails.Length / 2];
-            for (int i = 0, j = 0; i < RoverDetails.Length; i += 2, j++)
-            {
-                StartingPosition[j] = RoverDetails[i];
-            }
-
-            //create an array containing only the Movement commands for the Rovers
-            string[] RoverInstructions = new string[RoverDetails.Length / 2];
-            for (int i = 1, j = 0; i < RoverDetails.Length; i += 2, j++)
-            {
-                RoverInstructions[j] = RoverDetails[i];
-            }
-
-            var roverResponses = new List<string>();
-            for (int i = 0; i < RoverInstructions.Length; i++)
-            {
-
-                string[] PositionString = StartingPosition[i].Trim().Split(' ');
-
-                int xCoodinate = int.Parse(PositionString[0]);
-                int yCoodinate = int.Parse(PositionString[1]);
-                string RoverOrientation = PositionString[2].Trim().ToUpper();
-
-                //initiate objects
-                var plateau = new Plateau(PlateauArr[0], PlateauArr[1]);
-                var roverPosition = new Position(xCoodinate, yCoodinate, RoverOrientation);
-                var roverInstructions = RoverInstructions[i];
-
-                // Explore rover
-                var rover = new Mars_Rover(roverPosition, plateau);
-
-                try
+                //create new array to strore the values of the rover starting position and instruction seperate
+                string[] RoverDetails = new string[message.Length - 1];
+                for (int i = 1; i < message.Length; i++)
                 {
-                    rover.ExecuteInstructions(roverInstructions.ToUpper());
-                }
-                catch (Exception ex)
-                {
-                    if (ex is InvalidOperationException || ex is ArgumentException)
-                    {
-                        // Handle the exception here
-                        ViewBag.ErrorMessage = ex.Message;
-                        return View("index");
-                    }
-                    else
-                    {
-                        // Handle other types of exceptions here
-                        ViewBag.ErrorMessage = "Please check your input for correct format";
-                    }
-                    throw;
+                    RoverDetails[i - 1] = message[i];
                 }
 
-                roverResponses.Add(rover.CurrentPosition.ToString());
-                //Console.WriteLine(roverResponses[0]);      
-            }
+                //create an array containing only the starting positions of the Rovers
+                string[] StartingPosition = new string[RoverDetails.Length / 2];
+                for (int i = 0, j = 0; i < RoverDetails.Length; i += 2, j++)
+                {
+                    StartingPosition[j] = RoverDetails[i];
+                }
 
-            // Display responses
-            ViewBag.RoverResponses = roverResponses;
+                //create an array containing only the Movement commands for the Rovers
+                string[] RoverInstructions = new string[RoverDetails.Length / 2];
+                for (int i = 1, j = 0; i < RoverDetails.Length; i += 2, j++)
+                {
+                    RoverInstructions[j] = RoverDetails[i];
+                }
+
+                var roverResponses = new List<string>();
+                for (int i = 0; i < RoverInstructions.Length; i++)
+                {
+
+                    string[] PositionString = StartingPosition[i].Trim().Split(' ');
+
+                    int xCoodinate = int.Parse(PositionString[0]);
+                    int yCoodinate = int.Parse(PositionString[1]);
+                    string RoverOrientation = PositionString[2].Trim().ToUpper();
+
+                    //initiate objects
+                    var plateau = new Plateau(PlateauArr[0], PlateauArr[1]);
+                    var roverPosition = new Position(xCoodinate, yCoodinate, RoverOrientation);
+                    var roverInstructions = RoverInstructions[i];
+
+                    // Explore rover
+                    var rover = new Mars_Rover(roverPosition, plateau);
+
+                    try
+                    {
+                        rover.ExecuteInstructions(roverInstructions.ToUpper());
+                    }
+                    catch (Exception ex)
+                    {
+                        if (ex is InvalidOperationException || ex is ArgumentException)
+                        {
+                            // Handle the exception here
+                            ViewBag.ErrorMessage = ex.Message;
+                            return View("index");
+                        }
+                        else
+                        {
+                            // Handle other types of exceptions here
+                            ViewBag.ErrorMessage = "Please check your input for correct format";
+                        }
+                        throw;
+                    }
+                    roverResponses.Add(rover.CurrentPosition.ToString());     
+                }
+                // Display responses
+                ViewBag.RoverResponses = roverResponses;
+            }
+            catch (Exception)
+            {
+                ViewBag.ErrorMessage = "Input Error, Please check the format of your input";
+            }
 
             return View("index");
         }

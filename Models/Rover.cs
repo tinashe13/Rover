@@ -1,44 +1,10 @@
-﻿namespace Rover.Models
+﻿using MarsRover.Models;
+
+namespace Rover.Models
 {
-    public class Plateau
-    {
-        public int UpperRightX { get; }
-        public int UpperRightY { get; }
-
-        public Plateau(int upperRightX, int upperRightY)
-        {
-            UpperRightX = upperRightX;
-            UpperRightY = upperRightY;
-        }
-
-        public bool IsValidPosition(Position position)
-        {
-            return position.X >= 0 && position.X <= UpperRightX &&
-                   position.Y >= 0 && position.Y <= UpperRightY;
-        }
-    }
-
-    public class Position
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-        public string Orientation { get; set; }
-
-        public Position(int x, int y, string orientation)
-        {
-            X = x;
-            Y = y;
-            Orientation = orientation;
-        }
-
-        public override string ToString()
-        {
-            return $"{X} {Y} {Orientation}";
-        }
-    }
-
     public class Mars_Rover
     {
+        //initiate the Rover class
         public Position CurrentPosition { get; private set; }
         public Plateau Plateau { get; }
 
@@ -48,6 +14,8 @@
             Plateau = plateau;
         }
 
+
+        //Execute instructions method
         public void ExecuteInstructions(string instructions)
         {
             foreach (var instruction in instructions)
@@ -69,6 +37,7 @@
             }
         }
 
+        //Turn Left method to impliment to command 'L'
         public void TurnLeft()
         {
             switch (CurrentPosition.Orientation)
@@ -90,6 +59,7 @@
             }
         }
 
+        //Turn Right method to impliment to command 'R'
         public void TurnRight()
         {
             switch (CurrentPosition.Orientation)
@@ -111,6 +81,7 @@
             }
         }
 
+        //Move Forward method to impliment to command 'M'
         public void MoveForward()
         {
             switch (CurrentPosition.Orientation)
@@ -131,6 +102,7 @@
                     throw new ArgumentException($"Invalid Rover orientation: {CurrentPosition.Orientation}");
             }
 
+            //If Rover falls out of bounds this snippet is triggered
             if (!Plateau.IsValidPosition(CurrentPosition))
             {
                 throw new InvalidOperationException($"Rover has fallen off the plateau at position {CurrentPosition}");
